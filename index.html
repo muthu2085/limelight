@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Luxe Franchise - Ethical. Profitable. Sustainable.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        plum: {
+                            50: '#f8f4f6',
+                            100: '#DBC6D2',
+                            200: '#A78A9C',
+                            300: '#69485E',
+                            400: '#440330',
+                            500: '#440330',
+                            600: '#3a022a',
+                            700: '#2f0222',
+                            800: '#0A0508'
+                        },
+                        mauve: {
+                            400: '#A78A9C',
+                            500: '#A78A9C',
+                            600: '#8f7284'
+                        }
+                    },
+                    fontFamily: {
+                        'serif': ['Jost', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .diamond-sparkle {
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.8) 50%, transparent 70%);
+            animation: sparkle 3s infinite;
+        }
+		.herobg {
+        
+            background:url(solidbg.jpeg) no-repeat center center!important;
+        }
+		.text-5xl { line-height: 1.3!important; font-weight:500; }
+        
+        @keyframes sparkle {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .luxury-gradient {
+            background: linear-gradient(135deg, #DBC6D2 0%, #ffffff 50%, #f8f4f6 100%);
+        }
+        
+        .diamond-bg {
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(68, 3, 48, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(167, 138, 156, 0.1) 0%, transparent 50%);
+        }
+        .left-0 {margin-left:-10px}
+        .right-0 {margin-right:-10px}
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Top Info Strip -->
+    <div class="bg-gradient-to-r from-plum-700 to-plum-600 text-white py-2 px-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-sm">
+            <div class="font-medium">Ethical. Profitable. Sustainable.</div>
+            <div class="flex space-x-4">
+                <a href="#franchise-guide" class="hover:text-plum-100 transition-colors">Download Franchise Guide</a>
+                <a href="#apply" class="bg-mauve-500 hover:bg-mauve-600 px-3 py-1 rounded text-white font-medium transition-colors">Apply Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header id="header" class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                
+                <div>
+                    <img src="limelight-logo.jpg" />
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="tel:+1234567890" class="flex items-center text-plum-700 hover:text-plum-800 transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    +91 86556 57939
+                </a>
+                <button onclick="scrollToForm()" class="bg-gradient-to-r from-plum-700 to-plum-600 text-white rounded-full py-2 px-4">
+                     Enquiry
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-plum-700" onclick="toggleMobileMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t px-4 py-4 space-y-3">
+            <a href="tel:+1234567890" class="flex items-center text-plum-700 py-2">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                </svg>
+                (555) 123-4567
+            </a>
+            <button onclick="scrollToForm()" class="w-full bg-blum-500 text-white py-2 rounded-lg font-medium">
+                Enquiry
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="luxury-gradient diamond-bg relative overflow-hidden">
+        <div class="diamond-sparkle absolute inset-0 opacity-30"></div>
+        <div class="relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Right Column - Visual -->
+                <div class="">
+                    <div class="relative inline-block">
+                        <!-- Large Diamond Visual -->
+                       <img src="shilpa-shetty.png" alt="Diamond Luxe Franchise" />
+                        
+                        <!-- Floating Elements -->
+                        <div class="absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-plum-500 to-mauve-500 rounded-full flex items-center justify-center animate-bounce">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L8.5 8.5L2 12l6.5 3.5L12 22l3.5-6.5L22 12l-6.5-3.5L12 2z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="absolute bottom-8 left-8 w-8 h-8 bg-gradient-to-br from-mauve-400 to-plum-400 rounded-full flex items-center justify-center animate-pulse">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L8.5 8.5L2 12l6.5 3.5L12 22l3.5-6.5L22 12l-6.5-3.5L12 2z"/>
+                            </svg>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <!-- Left Column - Content -->
+                <div class="text-left">
+                    <h1 class="text-5xl md:text-6xl font-serif text-plum-800 mb-6 fade-in">
+                        Own <span class="bg-plum-600 text-white px-4 rounded-lg">Limelight</span> in <br/>Your City
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-700 mb-8 fade-in" style="animation-delay: 0.2s">
+                        Partner with India's #1 Lab-Grown Diamond Brand
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="flex flex-wrap gap-6 mb-8 fade-in" style="animation-delay: 0.3s">
+                        <div class="bg-white/80 backdrop-blur-sm rounded-lg px-4 py-3 shadow-lg">
+                            <div class="text-2xl text-plum-600">50+</div>
+                            <div class="text-sm text-gray-600">Stores</div>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur-sm rounded-lg px-4 py-3 shadow-lg">
+                            <div class="text-2xl text-plum-600">45+</div>
+                            <div class="text-sm text-gray-600">Cities</div>
+                        </div>
+                        <div class="px-4 py-3">
+                            <div class="text-2xl text-plum-600">ESG+ and IGI</div>
+                            <div class="text-sm text-gray-600">Certification</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Button Section -->
+                    <div class="fade-in" style="animation-delay: 0.4s">
+                       
+                        <button onclick="scrollToForm()" class="bg-plum-600 hover:bg-plum-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+                            Start Your Franchise Journey
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Lab-Grown Diamonds -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-serif text-center text-plum-800 mb-12">Why Lab-Grown Diamonds?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-plum-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-plum-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-plum-800 mb-2">Ethical</h3>
+                    <p class="text-gray-600">Conflict-free and environmentally responsible. No mining required.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-plum-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span style="font-size: 32px;">₹</span>
+
+                    </div>
+                    <h3 class="text-xl font-semibold text-plum-800 mb-2">Affordable</h3>
+                    <p class="text-gray-600">30-40% less expensive than mined diamonds with identical quality.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-plum-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-plum-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-plum-800 mb-2">Eco-Friendly</h3>
+                    <p class="text-gray-600">Minimal environmental impact compared to traditional diamond mining.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-plum-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-plum-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-plum-800 mb-2">High Demand</h3>
+                    <p class="text-gray-600">Growing 15-20% annually as consumers embrace sustainable luxury.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franchise Models -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-serif text-center text-plum-800 mb-4">Choose the Right Model for You</h2>
+            <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">Select the franchise model that best fits your investment capacity and business goals</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- FOCO Model -->
+                <div class="bg-gradient-to-br from-plum-50 to-plum-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-plum-200">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-plum-600 to-plum-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-serif text-plum-800 mb-2">FOCO</h3>
+                        <div class="text-3xl text-plum-600 mb-2">₹2.9 Cr</div>
+                        <p class="text-sm text-gray-600 font-medium">Franchise-Owned, Company-Operated</p>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Hands-free investment model</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700"><strong>12%+ assured ROI</strong></p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Complete operational management</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Premium standalone store</p>
+                        </div>
+                    </div>
+                    
+                    <button onclick="scrollToForm()" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-3 rounded-lg font-semibold transition-colors">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- SIS Supreme Model -->
+                <div class="bg-gradient-to-br from-plum-50 to-plum-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-plum-300 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-plum-500 text-white px-4 py-1 rounded-full text-sm font-semibold">POPULAR</span>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-plum-500 to-plum-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-serif text-plum-800 mb-2">SIS Supreme</h3>
+                        <div class="text-3xl text-plum-600 mb-2">₹50L–₹1 Cr</div>
+                        <p class="text-sm text-gray-600 font-medium">Premium Shop-in-Shop</p>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Luxurious in-store boutique</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Perfect for <strong>Tier 1 & 1.5 cities</strong></p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Premium brand positioning</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">High-traffic mall locations</p>
+                        </div>
+                    </div>
+                    
+                    <button onclick="scrollToForm()" class="w-full bg-plum-500 hover:bg-plum-600 text-white py-3 rounded-lg font-semibold transition-colors">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- SIS Regular Model -->
+                <div class="bg-gradient-to-br from-plum-50 to-plum-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-plum-200">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-plum-400 to-plum-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-serif text-plum-800 mb-2">SIS Regular</h3>
+                        <div class="text-3xl text-plum-600 mb-2">₹26L</div>
+                        <p class="text-sm text-gray-600 font-medium">Compact Shop-in-Shop</p>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700"><strong>Low investment entry</strong></p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Curated Limelight collection</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Compact space requirement</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 bg-plum-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Quick setup & launch</p>
+                        </div>
+                    </div>
+                    
+                    <button onclick="scrollToForm()" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-3 rounded-lg font-semibold transition-colors">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Recognition -->
+    <section class="py-16 px-4 bg-gradient-to-br from-plum-50 to-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-serif mb-4 text-plum-800">Trusted. Recognized. Celebrated.</h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">Join a brand backed by industry leaders with proven excellence</p>
+            
+            <!-- Industry Leadership & Certifications Combined -->
+            <div class="bg-white rounded-2xl p-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div><img src="labgrown-diamond.webp" /></div>
+                    <div class="text-center mt-8">
+                    <p class="text-2xl mb-8"><strong>Backed by Bhathwari Group & Emerald Jewel Industry</strong> – global leaders in LGD & jewellery manufacturing</p>
+                        
+                    <h3 class="text-2xl font-serif text-plum-800 mb-6">Featured In</h3>
+                    <div class="relative overflow-hidden">
+                        <div id="publicationsCarousel" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Vogue -->
+                            <div class="flex-shrink-0 w-full flex justify-center items-center space-x-8">
+                                <div class="bg-white rounded-lg p-6 shadow-md border border-plum-100 hover:shadow-lg transition-shadow">
+                                    <img src="vogue.jpg" alt="YourStory" class="" />
+                                </div>
+                                <div class="bg-white rounded-lg p-6 shadow-md border border-plum-100 hover:shadow-lg transition-shadow">
+                                   <img src="forbes.jpg" alt="forbes" class="" />
+                                </div>
+                            </div>
+                            <!-- Femina & YourStory -->
+                            <div class="flex-shrink-0 w-full flex justify-center items-center space-x-8">
+                                <div class="bg-white rounded-lg p-6 shadow-md border border-plum-100 hover:shadow-lg transition-shadow">
+                                    <img src="femina-logo.jpg" alt="Femina" class="" />
+                                </div>
+                                <div class="bg-white rounded-lg p-6 shadow-md border border-plum-100 hover:shadow-lg transition-shadow">
+                                    <img src="yourstory-logo.jpg" alt="YourStory" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel Navigation -->
+                        <button onclick="previousSlide()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-plum-600 hover:bg-plum-700 text-white p-2 rounded-full shadow-lg transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+                            </svg>
+                        </button>
+                        <button onclick="nextSlide()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-plum-600 hover:bg-plum-700 text-white p-2 rounded-full shadow-lg transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Carousel Indicators -->
+                    <div class="flex justify-center mt-4 space-x-2">
+                        <button onclick="goToSlide(0)" class="w-3 h-3 bg-plum-600 rounded-full carousel-indicator active"></button>
+                        <button onclick="goToSlide(1)" class="w-3 h-3 bg-plum-300 rounded-full carousel-indicator"></button>
+                    </div>
+                </div>
+                </div>
+              
+                <!-- Featured Publications Carousel -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Partner With Limelight -->
+    <section class="py-16 px-4 bg-plum-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-serif text-center text-plum-800 mb-4">Why Partner with Limelight?</h2>
+            <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">Join the world's most sustainable and innovative lab-grown diamond brand</p>
+            
+            <!-- Key Benefits Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Sustainable Luxury -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-plum-100">
+                    <div class="text-center mb-6">
+                        <img src="value-chain.png" width="72" height="72" class="inline-block" />
+                    </div>
+                    <h3 class="text-2xl font-serif text-plum-800 mb-4 text-center">Sustainable Luxury</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700"><strong>ESG+ certified</strong> operations</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">World's first <strong>Positive Luxury Butterfly Mark</strong> in LGD</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                               <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Carbon-neutral production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unmatched Purity -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-plum-100">
+                    <div class="text-center mb-6">
+                        <img src="diamond.png" width="72" height="72"  class="inline-block" />
+                    </div>
+                    <h3 class="text-2xl font-serif text-plum-800 mb-4 text-center">Unmatched Purity</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                               <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700"><strong>Type IIA diamonds</strong> - highest purity grade</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                               <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700"><strong>IGI-certified</strong> authenticity</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Superior brilliance & fire</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diverse Portfolio -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-plum-100">
+                    <div class="text-center mb-6">
+                        <img src="exchange.png" width="72" height="72" class="inline-block" />
+                    </div>
+                    <h3 class="text-2xl font-serif text-plum-800 mb-4 text-center">Diverse Portfolio</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700"><strong>2,000+ SKUs</strong> across all categories</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                               <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700"><strong>Bridal collection</strong> - engagement & wedding</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700"><strong>Couture & daily wear</strong> collections</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Support Benefits -->
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-serif text-plum-800 mb-6">Complete Partnership Support</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-plum-800 mb-1">Comprehensive Training Program</h4>
+                                <p class="text-gray-600">2-week intensive program covering diamond expertise, sales techniques, and operations management.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 rounded-full flex items-center justify-center mr-4 mt-1">
+                               <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-plum-800 mb-1">National Marketing Campaigns</h4>
+                                <p class="text-gray-600">Benefit from our award-winning marketing team and national brand recognition.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-plum-800 mb-1">Premium Supply Chain</h4>
+                                <p class="text-gray-600">Direct access to the world's finest lab-grown diamonds at wholesale pricing.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-5 h-5 text-plum-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-plum-800 mb-1">Ongoing Business Support</h4>
+                                <p class="text-gray-600">Dedicated franchise support team for operations, marketing, and growth strategies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="text-center">
+                        <img src="limelight-butterfly-certificate.jpg" class="inline-block" />
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+            <button onclick="scrollToForm()" class="bg-plum-600 hover:bg-plum-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                            Partner with Limelight
+            </button>
+           </div>             
+        </div>
+    </section>
+
+    <!-- Market Potential -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-serif text-plum-800 mb-12">Market Potential</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="p-6">
+                    <div class="text-4xl text-mauve-600 mb-2">$15B</div>
+                    <p class="text-lg text-gray-700">Global lab-grown diamond market size</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl text-plum-600 mb-2">22%</div>
+                    <p class="text-lg text-gray-700">Annual growth rate through 2030</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl text-mauve-600 mb-2">73%</div>
+                    <p class="text-lg text-gray-700">Of millennials prefer lab-grown diamonds</p>
+                </div>
+            </div>
+            <p class="text-xl text-gray-700 max-w-4xl mx-auto">
+                The lab-grown diamond industry is experiencing unprecedented growth as consumers increasingly value ethical sourcing, environmental responsibility, and exceptional value. Position yourself at the forefront of this luxury revolution.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials -->
+    <section class="py-16 px-4 bg-plum-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-serif text-center text-plum-800 mb-12">Success Stories</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-plum-100 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-plum-600 rounded-full flex items-center justify-center text-white mr-4">
+                            SM
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-plum-800">Sarah Mitchell</h3>
+                            <p class="text-gray-600">Dallas, TX Franchise Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"In just 18 months, we've exceeded all our projections. The support from Diamond Luxe has been incredible, and our customers love the ethical luxury we provide. Best business decision I've ever made."</p>
+                </div>
+                <div class="bg-mauve-100 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-mauve-600 rounded-full flex items-center justify-center text-white mr-4">
+                            MR
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-plum-800">Michael Rodriguez</h3>
+                            <p class="text-gray-600">Phoenix, AZ Franchise Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"The training program prepared me perfectly, even without jewelry experience. We're now the go-to destination for engagement rings in our area. The profit margins are exactly as promised."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps to Get Started -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-serif text-center text-plum-800 mb-12">Steps to Get Started</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-plum-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">1</div>
+                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Enquiry</h3>
+                    <p class="text-gray-600">Fill out the franchise interest form.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-plum-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">2</div>
+                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Call</h3>
+                    <p class="text-gray-600">Get our brochure & initial call.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-plum-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">3</div>
+                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Meeting</h3>
+                    <p class="text-gray-600">Discuss financials & territory in detail.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-plum-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">4</div>
+                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Agreement</h3>
+                    <p class="text-gray-600">Sign, set up, and launch your franchise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Form -->
+    <section id="contact-form" class="py-16 px-4 bg-gradient-to-br from-plum-600 to-plum-700 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-serif mb-6">Ready to Start Your Diamond Luxe Journey?</h2>
+            <p class="text-xl mb-8 opacity-90">Get your free franchise information package and discover the opportunity that's waiting for you.</p>
+            
+            <form id="franchiseForm" class="bg-white p-8 rounded-2xl text-gray-800 max-w-2xl mx-auto">
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Full Name *</label>
+                    <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Contact Number *</label>
+                        <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Email *</label>
+                        <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2 text-left">City / State *</label>
+                    <input type="text" required placeholder="e.g., Mumbai, Maharashtra" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Investment Range *</label>
+                    <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
+                        <option value="">Select Investment Range</option>
+                        <option value="25L">₹25L</option>
+                        <option value="50L-1Cr">₹50L–₹1 Cr</option>
+                        <option value="3Cr+">₹3 Cr+</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Preferred Model *</label>
+                    <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
+                        <option value="">Select Preferred Model</option>
+                        <option value="FOCO">FOCO (₹2.9 Cr)</option>
+                        <option value="SIS Supreme">SIS Supreme (₹50L–₹1 Cr)</option>
+                        <option value="SIS Regular">SIS Regular (₹26L)</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-4 rounded-lg text-lg font-semibold transition-colors">
+                    Submit My Franchise Application
+                </button>
+                <p class="text-sm text-gray-600 mt-4">Your information is secure and will only be used to send you franchise details.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Trust & Credibility -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-serif text-plum-800 mb-12">Trust & Credibility</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-plum-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-plum-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Certified Diamonds</h3>
+                    <p class="text-gray-600">All diamonds certified by leading gemological institutes.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-mauve-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-mauve-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Industry Awards</h3>
+                    <p class="text-gray-600">Recognized for excellence in franchise operations and support.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-plum-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-plum-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Lifetime Warranty</h3>
+                    <p class="text-gray-600">Comprehensive warranty on all diamond jewelry purchases.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-mauve-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-mauve-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Customer Satisfaction</h3>
+                    <p class="text-gray-600">98% customer satisfaction rate across all franchise locations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-plum-800 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-gold-400 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L8.5 8.5L2 12l6.5 3.5L12 22l3.5-6.5L22 12l-6.5-3.5L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-serif">Diamond Luxe</h3>
+                    </div>
+                    <p class="text-plum-200 mb-4">Ethical. Profitable. Sustainable.</p>
+                    <p class="text-plum-300 text-sm">Join the lab-grown diamond revolution with a trusted franchise partner.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Information</h4>
+                    <div class="space-y-2 text-plum-200">
+                        <p>📞 (555) 123-4567</p>
+                        <p>✉️ franchise@diamondluxe.com</p>
+                        <p>📍 123 Luxury Lane, Suite 100<br>Beverly Hills, CA 90210</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#franchise-guide" class="block text-plum-200 hover:text-white transition-colors">Franchise Guide</a>
+                        <a href="#investment" class="block text-plum-200 hover:text-white transition-colors">Investment Details</a>
+                        <a href="#territories" class="block text-plum-200 hover:text-white transition-colors">Available Territories</a>
+                        <a href="#support" class="block text-plum-200 hover:text-white transition-colors">Franchise Support</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-plum-700 rounded-full flex items-center justify-center hover:bg-plum-600 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-plum-700 rounded-full flex items-center justify-center hover:bg-plum-600 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-plum-700 rounded-full flex items-center justify-center hover:bg-plum-600 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-plum-700 pt-8 text-center text-plum-300">
+                <p>&copy; 2024 Diamond Luxe Franchise. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky header functionality
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Smooth scroll to form
+        function scrollToForm() {
+            document.getElementById('contact-form').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Form submission
+        document.getElementById('franchiseForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            const form = e.target;
+            const successMessage = document.createElement('div');
+            successMessage.className = 'bg-emerald-100 border border-emerald-400 text-emerald-700 px-4 py-3 rounded mb-4';
+            successMessage.innerHTML = '<strong>Thank you!</strong> Your franchise information request has been submitted. We\'ll contact you within 24 hours.';
+            
+            form.parentNode.insertBefore(successMessage, form);
+            form.reset();
+            
+            // Remove success message after 5 seconds
+            setTimeout(() => {
+                successMessage.remove();
+            }, 5000);
+        });
+
+        // Publications Carousel functionality
+        let currentSlide = 0;
+        const totalSlides = 2;
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+
+        function previousSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const carousel = document.getElementById('publicationsCarousel');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            indicators.forEach((indicator, index) => {
+                if (index === currentSlide) {
+                    indicator.classList.remove('bg-plum-300');
+                    indicator.classList.add('bg-plum-600', 'active');
+                } else {
+                    indicator.classList.remove('bg-plum-600', 'active');
+                    indicator.classList.add('bg-plum-300');
+                }
+            });
+        }
+
+        // Auto-advance carousel every 4 seconds
+        setInterval(nextSlide, 4000);
+
+        // Add fade-in animation to elements when they come into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section > div').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'986b7b4de03a7f9f',t:'MTc1OTE0ODkyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
