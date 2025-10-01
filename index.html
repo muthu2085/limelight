@@ -30,20 +30,24 @@
                         }
                     },
                     fontFamily: {
-                        'serif': ['Jost', 'serif'],
-                        'sans': ['Inter', 'sans-serif']
+                        'serif': ['DM Serif Text', 'serif'],
+                        'sans': ['Jost', 'sans-serif']
                     }
                 }
             }
         }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><style>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
         body {
             box-sizing: border-box;
+            font-size:1.1rem;
         }
-        
+        h1,h2,h3,h4 { font-family: 'DM Serif Text', serif; }
+        h1 b {font-weight: normal;}
+        p, a, li, span, button, input, textarea { font-family: 'Jost', sans-serif; font-size:1.2rem; line-height:1.8rem; }
         .diamond-sparkle {
             background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.8) 50%, transparent 70%);
             animation: sparkle 3s infinite;
@@ -73,7 +77,7 @@
         }
         
         .luxury-gradient {
-            background: linear-gradient(135deg, #DBC6D2 0%, #ffffff 50%, #f8f4f6 100%);
+            background: linear-gradient(90deg, #dfaeca 0%, #6b344f 100%);
             height:600px;
             overflow: hidden;
         }
@@ -309,38 +313,25 @@
 
     <!-- Hero Section -->
     <section class="luxury-gradient relative overflow-hidden">
-        <div class="diamond-sparkle absolute inset-0 opacity-30"></div>
+        
         <div class="relative z-10 container mx-auto">
             <div class="grid lg:grid-cols-2 gap-12">
                 
                 <!-- Right Column - Visual -->
-                <div class="">
-                    <div class="relative inline-block">
+                <div class="text-center">
+                    <div class="relative inline-block text-center">
                         <!-- Large Diamond Visual -->
-                       <img src="shilpa-shetty-new.png" alt="Diamond Luxe Franchise" />
+                       <img src="shilpa-shetty-new.png" class="inline-block" alt="Diamond Luxe Franchise" />
                         
-                        <!-- Floating Elements 
-                        <div class="absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-plum-500 to-mauve-500 rounded-full flex items-center justify-center animate-bounce">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2L8.5 8.5L2 12l6.5 3.5L12 22l3.5-6.5L22 12l-6.5-3.5L12 2z"/>
-                            </svg>
-                        </div>
-                        
-                        <div class="absolute bottom-8 left-8 w-8 h-8 bg-gradient-to-br from-mauve-400 to-plum-400 rounded-full flex items-center justify-center animate-pulse">
-                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2L8.5 8.5L2 12l6.5 3.5L12 22l3.5-6.5L22 12l-6.5-3.5L12 2z"/>
-                            </svg>
-                        </div>
-                        -->
-                        
+                       
                     </div>
                 </div>
                 <!-- Left Column - Content -->
                 <div class="text-left  p-8 md:pt-16 lg:pt-24">
-                    <h1 class="text-5xl md:text-6xl font-serif text-plum-800 mb-6 fade-in">
-                        Own <span class="bg-plum-600 text-white px-4 rounded-lg">Limelight</span> in <br/>Your City
+                    <h1 class="text-5xl md:text-6xl font-serif text-white mb-6 fade-in">
+                        Own <b class="bg-plum-600 text-white px-4 rounded-lg">Limelight</b> in <br/>Your City
                     </h1>
-                    <p class="text-xl md:text-2xl text-gray-700 mb-8 fade-in" style="animation-delay: 0.2s">
+                    <p class="text-xl md:text-2xl text-gray-700 mb-8 fade-in text-white" style="animation-delay: 0.2s">
                         Partner with India's #1 Lab-Grown Diamond Brand
                     </p>
                     
@@ -363,7 +354,7 @@
                     <!-- Button Section -->
                     <div class="fade-in" style="animation-delay: 0.4s">
                        
-                        <button onclick="scrollToForm()" class="bg-plum-600 hover:bg-plum-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+                        <button onclick="scrollToForm()" class="bg-plum-600 hover:bg-plum-700 text-white px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
                             Start Your Franchise Journey
                         </button>
                     </div>
@@ -384,7 +375,7 @@
                             <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-plum-800 mb-2">Ethical</h3>
+                    <h3 class="text-xl text-plum-800 mb-2">Ethical</h3>
                     <p class="text-gray-600">Conflict-free and environmentally responsible. No mining required.</p>
                 </div>
                 <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
@@ -392,7 +383,7 @@
                         <span style="font-size: 32px;">₹</span>
 
                     </div>
-                    <h3 class="text-xl font-semibold text-plum-800 mb-2">Affordable</h3>
+                    <h3 class="text-xl text-plum-800 mb-2">Affordable</h3>
                     <p class="text-gray-600">30-40% less expensive than mined diamonds with identical quality.</p>
                 </div>
                 <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
@@ -401,7 +392,7 @@
                             <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-plum-800 mb-2">Eco-Friendly</h3>
+                    <h3 class="text-xl text-plum-800 mb-2">Eco-Friendly</h3>
                     <p class="text-gray-600">Minimal environmental impact compared to traditional diamond mining.</p>
                 </div>
                 <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
@@ -410,7 +401,7 @@
                             <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-plum-800 mb-2">High Demand</h3>
+                    <h3 class="text-xl text-plum-800 mb-2">High Demand</h3>
                     <p class="text-gray-600">Growing 15-20% annually as consumers embrace sustainable luxury.</p>
                 </div>
             </div>
@@ -472,7 +463,7 @@
                         </div>
                     </div>
                     
-                    <button onclick="scrollToForm()" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-3 rounded-lg font-semibold transition-colors">
+                    <button onclick="scrollToForm()" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-3 rounded-lg transition-colors">
                         Learn More
                     </button>
                 </div>
@@ -480,7 +471,7 @@
                 <!-- SIS Supreme Model -->
                 <div class="bg-gradient-to-br from-plum-50 to-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-plum-300 relative">
                     <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                        <span class="bg-plum-500 text-white px-4 py-1 rounded-full text-sm font-semibold">POPULAR</span>
+                        <span class="bg-plum-500 text-white px-4 py-1 rounded-full text-sm">POPULAR</span>
                     </div>
                     
                     <div class="text-center mb-6">
@@ -529,7 +520,7 @@
                         </div>
                     </div>
                     
-                    <button onclick="scrollToForm()" class="w-full bg-plum-500 hover:bg-plum-600 text-white py-3 rounded-lg font-semibold transition-colors">
+                    <button onclick="scrollToForm()" class="w-full bg-plum-500 hover:bg-plum-600 text-white py-3 rounded-lg transition-colors">
                         Learn More
                     </button>
                 </div>
@@ -582,7 +573,7 @@
                         </div>
                     </div>
                     
-                    <button onclick="scrollToForm()" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-3 rounded-lg font-semibold transition-colors">
+                    <button onclick="scrollToForm()" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-3 rounded-lg transition-colors">
                         Learn More
                     </button>
                 </div>
@@ -757,7 +748,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="text-lg font-semibold text-plum-800 mb-1">Comprehensive Training Program</h4>
+                                <h4 class="text-lg text-plum-800 mb-1">Comprehensive Training Program</h4>
                                 <p class="text-gray-600">2-week intensive program covering diamond expertise, sales techniques, and operations management.</p>
                             </div>
                         </div>
@@ -768,7 +759,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="text-lg font-semibold text-plum-800 mb-1">National Marketing Campaigns</h4>
+                                <h4 class="text-lg text-plum-800 mb-1">National Marketing Campaigns</h4>
                                 <p class="text-gray-600">Benefit from our award-winning marketing team and national brand recognition.</p>
                             </div>
                         </div>
@@ -779,7 +770,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="text-lg font-semibold text-plum-800 mb-1">Premium Supply Chain</h4>
+                                <h4 class="text-lg text-plum-800 mb-1">Premium Supply Chain</h4>
                                 <p class="text-gray-600">Direct access to the world's finest lab-grown diamonds at wholesale pricing.</p>
                             </div>
                         </div>
@@ -790,7 +781,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="text-lg font-semibold text-plum-800 mb-1">Ongoing Business Support</h4>
+                                <h4 class="text-lg text-plum-800 mb-1">Ongoing Business Support</h4>
                                 <p class="text-gray-600">Dedicated franchise support team for operations, marketing, and growth strategies.</p>
                             </div>
                         </div>
@@ -804,7 +795,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                 </div>
             </div>
             <div class="text-center mt-12">
-            <button onclick="scrollToForm()" class="bg-plum-600 hover:bg-plum-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+            <button onclick="scrollToForm()" class="bg-plum-600 hover:bg-plum-700 text-white px-6 py-3 rounded-lg transition-colors">
                             Partner with Limelight
             </button>
            </div>             
@@ -927,22 +918,22 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
             <div class="grid md:grid-cols-4 gap-6">
                 <div class="text-center">
                     <div class="w-16 h-16 bg-plum-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">1</div>
-                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Enquiry</h3>
+                    <h3 class="text-lg text-plum-800 mb-2">Enquiry</h3>
                     <p class="text-gray-600">Fill out the franchise interest form.</p>
                 </div>
                 <div class="text-center">
                     <div class="w-16 h-16 bg-plum-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">2</div>
-                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Call</h3>
+                    <h3 class="text-lg text-plum-800 mb-2">Call</h3>
                     <p class="text-gray-600">Get our brochure & initial call.</p>
                 </div>
                 <div class="text-center">
                     <div class="w-16 h-16 bg-plum-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">3</div>
-                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Meeting</h3>
+                    <h3 class="text-lg text-plum-800 mb-2">Meeting</h3>
                     <p class="text-gray-600">Discuss financials & territory in detail.</p>
                 </div>
                 <div class="text-center">
                     <div class="w-16 h-16 bg-plum-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">4</div>
-                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Agreement</h3>
+                    <h3 class="text-lg text-plum-800 mb-2">Agreement</h3>
                     <p class="text-gray-600">Sign, set up, and launch your franchise.</p>
                 </div>
             </div>
@@ -992,7 +983,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                         <option value="SIS Regular">SIS Regular (₹26L)</option>
                     </select>
                 </div>
-                <button type="submit" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-4 rounded-lg text-lg font-semibold transition-colors">
+                <button type="submit" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-4 rounded-lg text-lg transition-colors">
                     Submit My Franchise Application
                 </button>
                 <p class="text-sm text-gray-600 mt-4">Your information is secure and will only be used to send you franchise details.</p>
@@ -1011,7 +1002,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                             <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Certified Diamonds</h3>
+                    <h3 class="text-lg text-plum-800 mb-2">Certified Diamonds</h3>
                     <p class="text-gray-600">All diamonds certified by leading gemological institutes.</p>
                 </div>
                 <div class="p-6">
@@ -1020,7 +1011,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Industry Awards</h3>
+                    <h3 class="text-lg text-plum-800 mb-2">Industry Awards</h3>
                     <p class="text-gray-600">Recognized for excellence in franchise operations and support.</p>
                 </div>
                 <div class="p-6">
@@ -1029,7 +1020,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Lifetime Warranty</h3>
+                    <h3 class="text-lg text-plum-800 mb-2">Lifetime Warranty</h3>
                     <p class="text-gray-600">Comprehensive warranty on all diamond jewelry purchases.</p>
                 </div>
                 <div class="p-6">
@@ -1038,7 +1029,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                             <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-semibold text-plum-800 mb-2">Customer Satisfaction</h3>
+                    <h3 class="text-lg text-plum-800 mb-2">Customer Satisfaction</h3>
                     <p class="text-gray-600">98% customer satisfaction rate across all franchise locations.</p>
                 </div>
             </div>
