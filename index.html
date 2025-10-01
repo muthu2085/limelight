@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diamond Luxe Franchise - Ethical. Profitable. Sustainable.</title>
     <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -72,6 +74,8 @@
         
         .luxury-gradient {
             background: linear-gradient(135deg, #DBC6D2 0%, #ffffff 50%, #f8f4f6 100%);
+            height:600px;
+            overflow: hidden;
         }
         
         .diamond-bg {
@@ -81,6 +85,162 @@
         }
         .left-0 {margin-left:-10px}
         .right-0 {margin-right:-10px}
+
+        /* Swiper Slider */
+        .swiper {
+            width: 100%;
+            height: 400px;
+        }
+        
+        @media (max-width: 768px) {
+            .swiper {
+                height: 250px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .swiper {
+                height: 200px;
+            }
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .swiper-slide img:hover {
+            transform: scale(1.05);
+        }
+        
+        .zoom-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .zoom-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .zoom-image {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+        }
+        
+        .zoom-overlay.active .zoom-image {
+            transform: scale(1);
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+            transition: color 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .close-btn {
+                top: 15px;
+                right: 20px;
+                font-size: 35px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .close-btn {
+                top: 10px;
+                right: 15px;
+                font-size: 30px;
+            }
+        }
+        
+        .close-btn:hover {
+            color: #ff6b6b;
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 50px;
+            height: 50px;
+            background: #460032;
+            transition: all 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .swiper-button-next,
+            .swiper-button-prev {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .swiper-button-next svg,
+            .swiper-button-prev svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .swiper-button-next,
+            .swiper-button-prev {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .swiper-button-next svg,
+            .swiper-button-prev svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+        
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background: #5a0040;
+            transform: scale(1.1);
+        }
+        
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            display: none;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: #3b82f6 !important;
+        }
     </style>
 </head>
 <body class="font-sans text-gray-800">
@@ -142,18 +302,18 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="luxury-gradient diamond-bg relative overflow-hidden">
+    <section class="luxury-gradient relative overflow-hidden">
         <div class="diamond-sparkle absolute inset-0 opacity-30"></div>
         <div class="relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="grid lg:grid-cols-2 gap-12">
                 
                 <!-- Right Column - Visual -->
                 <div class="">
                     <div class="relative inline-block">
                         <!-- Large Diamond Visual -->
-                       <img src="shilpa-shetty.png" alt="Diamond Luxe Franchise" />
+                       <img src="shilpa-shetty-new.png" alt="Diamond Luxe Franchise" />
                         
-                        <!-- Floating Elements -->
+                        <!-- Floating Elements 
                         <div class="absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-plum-500 to-mauve-500 rounded-full flex items-center justify-center animate-bounce">
                             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2L8.5 8.5L2 12l6.5 3.5L12 22l3.5-6.5L22 12l-6.5-3.5L12 2z"/>
@@ -165,12 +325,12 @@
                                 <path d="M12 2L8.5 8.5L2 12l6.5 3.5L12 22l3.5-6.5L22 12l-6.5-3.5L12 2z"/>
                             </svg>
                         </div>
-                        
+                        -->
                         
                     </div>
                 </div>
                 <!-- Left Column - Content -->
-                <div class="text-left">
+                <div class="text-left pt-20">
                     <h1 class="text-5xl md:text-6xl font-serif text-plum-800 mb-6 fade-in">
                         Own <span class="bg-plum-600 text-white px-4 rounded-lg">Limelight</span> in <br/>Your City
                     </h1>
@@ -188,9 +348,9 @@
                             <div class="text-2xl text-plum-600">45+</div>
                             <div class="text-sm text-gray-600">Cities</div>
                         </div>
-                        <div class="px-4 py-3">
-                            <div class="text-2xl text-plum-600">ESG+ and IGI</div>
-                            <div class="text-sm text-gray-600">Certification</div>
+                        <div class="bg-white/80 backdrop-blur-sm rounded-lg px-4 py-3 shadow-lg">
+                            <div class="text-2xl text-plum-600">40+</div>
+                            <div class="text-sm text-gray-600">Shop in Shops</div>
                         </div>
                     </div>
                     
@@ -259,7 +419,7 @@
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- FOCO Model -->
-                <div class="bg-gradient-to-br from-plum-50 to-plum-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-plum-200">
+                <div class="bg-gradient-to-br from-plum-50 to-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-plum-200">
                     <div class="text-center mb-6">
                         <div class="w-16 h-16 bg-gradient-to-br from-plum-600 to-plum-700 rounded-full flex items-center justify-center mx-auto mb-4">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -312,7 +472,7 @@
                 </div>
 
                 <!-- SIS Supreme Model -->
-                <div class="bg-gradient-to-br from-plum-50 to-plum-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-plum-300 relative">
+                <div class="bg-gradient-to-br from-plum-50 to-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-plum-300 relative">
                     <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
                         <span class="bg-plum-500 text-white px-4 py-1 rounded-full text-sm font-semibold">POPULAR</span>
                     </div>
@@ -369,7 +529,7 @@
                 </div>
 
                 <!-- SIS Regular Model -->
-                <div class="bg-gradient-to-br from-plum-50 to-plum-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-plum-200">
+                <div class="bg-gradient-to-br from-plum-50 to-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-plum-200">
                     <div class="text-center mb-6">
                         <div class="w-16 h-16 bg-gradient-to-br from-plum-400 to-plum-500 rounded-full flex items-center justify-center mx-auto mb-4">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -426,57 +586,40 @@
 
     <!-- Trust & Recognition -->
     <section class="py-16 px-4 bg-gradient-to-br from-plum-50 to-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-serif mb-4 text-plum-800 text-center">About Limelight Diamond</h2>
+            <p class="text-xl text-gray-600 mb-12 text-center">India’s fastest growing Labgrown diamond jewellery brand</p>
+            
+            <!-- Industry Leadership & Certifications Combined -->
+            <div class="container">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div><iframe width="100%" height="315" src="https://www.youtube.com/embed/HasJUOGhVG4?si=IH5BrCOYSec7xV_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div>                  
+                        <p>Headquartered in Mumbai, Limelight has emerged as India’s largest lab grown diamond jewellery brand specializing in pure CVD diamond studded jewellery. In the last two years, the brand has seen a rapid growth with the widest reach for
+LGD jewellery with 50+ Stores (EBOs), 40+ shop-in-shops spread across 45+ cities. Being the oldest brand in the country spreading awareness and education on lab grown diamonds, Limelight has become synonymous to being consumer’s most trusted brand in the realm of sustainable jewellery offering
+superior quality, exclusive designs and premium finish. A fully vertically integrated brand, Limelight is also the only “green” certified LGD jewellery brand with an ESG+ certification. </p>
+                    </div>
+                    
+                </div>
+              
+                <!-- Featured Publications Carousel -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Recognition -->
+    <section class="py-16 px-4 bg-gradient-to-br from-plum-50 to-white">
         <div class="max-w-6xl mx-auto text-center">
             <h2 class="text-4xl font-serif mb-4 text-plum-800">Trusted. Recognized. Celebrated.</h2>
             <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">Join a brand backed by industry leaders with proven excellence</p>
             
             <!-- Industry Leadership & Certifications Combined -->
-            <div class="bg-white rounded-2xl p-8">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div><img src="labgrown-diamond.webp" /></div>
-                    <div class="text-center mt-8">
-                    <p class="text-2xl mb-8"><strong>Backed by Bhathwari Group & Emerald Jewel Industry</strong> – global leaders in LGD & jewellery manufacturing</p>
-                        
-                    <h3 class="text-2xl font-serif text-plum-800 mb-6">Featured In</h3>
-                    <div class="relative overflow-hidden">
-                        <div id="publicationsCarousel" class="flex transition-transform duration-500 ease-in-out">
-                            <!-- Vogue -->
-                            <div class="flex-shrink-0 w-full flex justify-center items-center space-x-8">
-                                <div class="bg-white rounded-lg p-6 shadow-md border border-plum-100 hover:shadow-lg transition-shadow">
-                                    <img src="vogue.jpg" alt="YourStory" class="" />
-                                </div>
-                                <div class="bg-white rounded-lg p-6 shadow-md border border-plum-100 hover:shadow-lg transition-shadow">
-                                   <img src="forbes.jpg" alt="forbes" class="" />
-                                </div>
-                            </div>
-                            <!-- Femina & YourStory -->
-                            <div class="flex-shrink-0 w-full flex justify-center items-center space-x-8">
-                                <div class="bg-white rounded-lg p-6 shadow-md border border-plum-100 hover:shadow-lg transition-shadow">
-                                    <img src="femina-logo.jpg" alt="Femina" class="" />
-                                </div>
-                                <div class="bg-white rounded-lg p-6 shadow-md border border-plum-100 hover:shadow-lg transition-shadow">
-                                    <img src="yourstory-logo.jpg" alt="YourStory" class="" />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Carousel Navigation -->
-                        <button onclick="previousSlide()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-plum-600 hover:bg-plum-700 text-white p-2 rounded-full shadow-lg transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
-                            </svg>
-                        </button>
-                        <button onclick="nextSlide()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-plum-600 hover:bg-plum-700 text-white p-2 rounded-full shadow-lg transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <!-- Carousel Indicators -->
-                    <div class="flex justify-center mt-4 space-x-2">
-                        <button onclick="goToSlide(0)" class="w-3 h-3 bg-plum-600 rounded-full carousel-indicator active"></button>
-                        <button onclick="goToSlide(1)" class="w-3 h-3 bg-plum-300 rounded-full carousel-indicator"></button>
-                    </div>
-                </div>
+            <div class="container">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div><img src="media-1.png" /></div>
+                    <div><img src="media-2.png" /></div>
+                    <div><img src="media-3.png" /></div>
                 </div>
               
                 <!-- Featured Publications Carousel -->
@@ -661,6 +804,56 @@
            </div>             
         </div>
     </section>
+    <!-- Market Potential -->
+    <section class="py-16 px-4 bg-white">
+    <div class="container-fluid p-0">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl md:text-4xl sm:text-3xl font-bold text-gray-800 mb-4">Our Store Locations</h1>
+            <p class="text-gray-600 text-lg sm:text-base px-4">Explore our branch stores</p>
+        </div>
+        
+        <div class="overflow-hidden">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="store-1.jpg" alt="Lake view" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="store-2.jpg" alt="Desert sunset" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="store-3.jpg" alt="Ocean waves" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="store-4.jpg" alt="Mountain peak" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="store-5.jpg" />
+                    
+                </div>
+                <!--
+                <div class="swiper-button-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="swiper-pagination"></div>-->
+            </div>
+        </div>
+        
+      
+    </div>
+    </section>
+    <!-- Zoom Overlay -->
+    <div class="zoom-overlay" id="zoomOverlay">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img class="zoom-image" id="zoomImage" src="" alt="Zoomed image" />
+    </div>
 
     <!-- Market Potential -->
     <section class="py-16 px-4 bg-white">
@@ -1008,4 +1201,88 @@
         });
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'986b7b4de03a7f9f',t:'MTc1OTE0ODkyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>
+        // Initialize Swiper
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                }
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            keyboard: {
+                enabled: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            effect: 'slide',
+            speed: 600,
+        });
+        
+        // Zoom functionality
+        const zoomOverlay = document.getElementById('zoomOverlay');
+        const zoomImage = document.getElementById('zoomImage');
+        const closeBtn = document.getElementById('closeBtn');
+        const swiperImages = document.querySelectorAll('.swiper-slide img');
+        
+        // Add click event to all images
+        swiperImages.forEach(img => {
+            img.addEventListener('click', function() {
+                zoomImage.src = this.src;
+                zoomImage.alt = this.alt;
+                zoomOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            });
+        });
+        
+        // Close zoom overlay
+        function closeZoom() {
+            zoomOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+        
+        closeBtn.addEventListener('click', closeZoom);
+        
+        // Close on overlay click (but not on image click)
+        zoomOverlay.addEventListener('click', function(e) {
+            if (e.target === zoomOverlay) {
+                closeZoom();
+            }
+        });
+        
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && zoomOverlay.classList.contains('active')) {
+                closeZoom();
+            }
+        });
+        
+        // Prevent image dragging
+        document.addEventListener('dragstart', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        });
+    </script>
 </html>
