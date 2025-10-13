@@ -77,7 +77,7 @@
         
         .luxury-gradient {
             background: linear-gradient(90deg, #dfaeca 0%, #6b344f 100%);
-            height:600px;
+            height:auto;
             overflow: hidden;
         }
 
@@ -234,6 +234,7 @@
                 width: 18px;
                 height: 18px;
             }
+            br {display: none;}
         }
         
         .swiper-button-next:hover,
@@ -253,7 +254,7 @@
         .starbg {
             background: url('starbg.png') no-repeat center center;
             background-size: contain;
-            padding: 20px;
+            padding:0px;
         }
         .left-50 {left: 0px;}
     </style>
@@ -276,7 +277,7 @@
             <div class="flex items-center">
                 
                 <div>
-                    <img src="limelight-logo.jpg" />
+                    <img src="images/limelight-logo.jpg" />
                 </div>
             </div>
 
@@ -318,15 +319,15 @@
     <!-- Hero Section -->
     <section class="luxury-gradient relative overflow-hidden">
         
-        <div class="relative z-10 container mx-auto">
-            <div class="grid lg:grid-cols-2 gap-12">
+        <div class="relative z-10 container mx-auto" id="contact-form">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
                 
                 <!-- Right Column - Visual -->
                 <div class="text-center">
                     <div class="relative inline-block text-center starbg">
-                        <img src="star.png" class="absolute left-50 opacity-20" alt="Star Background" />
+                        <img src="images/star.png" class="absolute left-50 opacity-20" alt="Star Background" />
                         <!-- Large Diamond Visual -->
-                       <img src="shilpa-shetty-new.png" class="inline-block" alt="Diamond Luxe Franchise" />
+                       <img src="images/shilpa-shetty-new.png" class="inline-block bottom-0" alt="Diamond Luxe Franchise" />
                         
                        
                     </div>
@@ -340,28 +341,43 @@
                         Partner with India's #1 Lab-Grown Diamond Brand
                     </p>
                     
-                    <!-- Stats -->
-                    <div class="flex flex-wrap gap-6 mb-8 fade-in" style="animation-delay: 0.3s">
-                        <div class="bg-white/80 backdrop-blur-sm rounded-lg px-4 py-3 shadow-lg">
-                            <div class="text-2xl text-plum-600">50+</div>
-                            <div class="text-sm text-gray-600">Stores</div>
-                        </div>
-                        <div class="bg-white/80 backdrop-blur-sm rounded-lg px-4 py-3 shadow-lg">
-                            <div class="text-2xl text-plum-600">45+</div>
-                            <div class="text-sm text-gray-600">Cities</div>
-                        </div>
-                        <div class="bg-white/80 backdrop-blur-sm rounded-lg px-4 py-3 shadow-lg">
-                            <div class="text-2xl text-plum-600">40+</div>
-                            <div class="text-sm text-gray-600">Shop in Shops</div>
-                        </div>
-                    </div>
                     
                     <!-- Button Section -->
                     <div class="fade-in" style="animation-delay: 0.4s">
+                             <form id="franchiseForm" class="max-w-2xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>                  
                        
-                        <button onclick="scrollToForm()" class="bg-plum-600 hover:bg-plum-700 text-white px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
-                            Start Your Franchise Journey
-                        </button>
+                        <input type="text" placeholder="Enter Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
+                    </div>
+                    <div>
+                       
+                        <input type="email" placeholder="Enter Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
+                    </div>   
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                       
+                        <input type="tel" placeholder="Enter Phone No" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
+                    </div>
+                    
+                
+                    <div>
+                       
+                        <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
+                            <option value="">Select Preferred Model</option>
+                            <option value="FOCO">FOCO (₹2.9 Cr)</option>
+                            <option value="SIS Supreme">SIS Supreme (₹50L–₹1 Cr)</option>
+                            <option value="SIS Regular">SIS Regular (₹26L)</option>
+                        </select>
+                    </div>
+              
+                </div>
+                <button type="submit" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-4 rounded-lg text-lg transition-colors">
+                    Submit My Franchise Application
+                </button>
+                <p class="text-sm text-gray-100 mt-4">Your information is secure and will only be used to send you franchise details.</p>
+            </form>
                     </div>
                 </div>
                 
@@ -467,10 +483,10 @@
                             <p class="text-gray-700">Premium standalone store</p>
                         </div>
                     </div>
-                    
+                    <!--
                     <button onclick="scrollToForm()" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-3 rounded-lg transition-colors">
                         Learn More
-                    </button>
+                    </button>-->
                 </div>
 
                 <!-- SIS Supreme Model -->
@@ -525,9 +541,9 @@
                         </div>
                     </div>
                     
-                    <button onclick="scrollToForm()" class="w-full bg-plum-500 hover:bg-plum-600 text-white py-3 rounded-lg transition-colors">
+                    <!--button onclick="scrollToForm()" class="w-full bg-plum-500 hover:bg-plum-600 text-white py-3 rounded-lg transition-colors">
                         Learn More
-                    </button>
+                    </button>-->
                 </div>
 
                 <!-- SIS Regular Model -->
@@ -578,9 +594,9 @@
                         </div>
                     </div>
                     
-                    <button onclick="scrollToForm()" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-3 rounded-lg transition-colors">
+                    <!--<button onclick="scrollToForm()" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-3 rounded-lg transition-colors">
                         Learn More
-                    </button>
+                    </button>-->
                 </div>
             </div>
         </div>
@@ -595,13 +611,29 @@
             <!-- Industry Leadership & Certifications Combined -->
             <div class="container">
                 <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <div><iframe width="100%" height="315" src="https://www.youtube.com/embed/HasJUOGhVG4?si=IH5BrCOYSec7xV_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div><iframe width="100%" height="315" src="images/https://www.youtube.com/embed/HasJUOGhVG4?si=IH5BrCOYSec7xV_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
                     <div>                  
-                        <p>Headquartered in Mumbai, Limelight has emerged as India’s largest lab grown diamond jewellery brand specializing in pure CVD diamond studded jewellery. In the last two years, the brand has seen a rapid growth with the widest reach for
-LGD jewellery with 50+ Stores (EBOs), 40+ shop-in-shops spread across 45+ cities. Being the oldest brand in the country spreading awareness and education on lab grown diamonds, Limelight has become synonymous to being consumer’s most trusted brand in the realm of sustainable jewellery offering
+                        <p>Headquartered in Mumbai, Limelight has emerged as India’s largest lab grown diamond jewellery brand specializing in pure CVD diamond studded jewellery.  50+ Stores (EBOs), 40+ shop-in-shops spread across 45+ cities. Being the oldest brand in the country spreading awareness and education on lab grown diamonds, Limelight has become synonymous to being consumer’s most trusted brand in the realm of sustainable jewellery offering
 superior quality, exclusive designs and premium finish. A fully vertically integrated brand, Limelight is also the only “green” certified LGD jewellery brand with an ESG+ certification. </p>
                     </div>
-                    
+                </div>
+                <div class="text-center mt-12 max-w-2xl mx-auto">
+                    <h4 class="pb-8">In the last two years, the brand has seen a rapid growth with the widest reach for
+LGD jewellery with</h4>
+                    <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-3">
+                    <div class="text-4xl text-plum-600 mb-2">50+</div>
+                    <p class="text-lg text-gray-700">Stores</p>
+                </div>
+                <div class="p-3">
+                    <div class="text-4xl text-plum-600 mb-2">40+</div>
+                    <p class="text-lg text-gray-700">Shop-in-Shops</p>
+                </div>
+                <div class="p-3">
+                    <div class="text-4xl text-plum-600 mb-2">45+</div>
+                    <p class="text-lg text-gray-700">cities</p>
+                </div>
+            </div>
                 </div>
               
                 <!-- Featured Publications Carousel -->
@@ -619,9 +651,9 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
             <!-- Industry Leadership & Certifications Combined -->
             <div class="container">
                 <div class="grid md:grid-cols-3 gap-8 items-center">
-                    <div><img src="media-1.png" /></div>
-                    <div><img src="media-2.png" /></div>
-                    <div><img src="media-3.png" /></div>
+                    <div><img src="images/media-1.png" /></div>
+                    <div><img src="images/media-2.png" /></div>
+                    <div><img src="images/media-3.png" /></div>
                 </div>
               
                 <!-- Featured Publications Carousel -->
@@ -641,7 +673,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                 <!-- Sustainable Luxury -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-plum-100">
                     <div class="text-center mb-6">
-                        <img src="value-chain.png" width="72" height="72" class="inline-block" />
+                        <img src="images/value-chain.png" width="72" height="72" class="inline-block" />
                     </div>
                     <h3 class="text-2xl font-serif text-plum-800 mb-4 text-center">Sustainable Luxury</h3>
                     <div class="space-y-3">
@@ -675,7 +707,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                 <!-- Unmatched Purity -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-plum-100">
                     <div class="text-center mb-6">
-                        <img src="diamond.png" width="72" height="72"  class="inline-block" />
+                        <img src="images/diamond.png" width="72" height="72"  class="inline-block" />
                     </div>
                     <h3 class="text-2xl font-serif text-plum-800 mb-4 text-center">Unmatched Purity</h3>
                     <div class="space-y-3">
@@ -709,7 +741,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                 <!-- Diverse Portfolio -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-plum-100">
                     <div class="text-center mb-6">
-                        <img src="exchange.png" width="72" height="72" class="inline-block" />
+                        <img src="images/exchange.png" width="72" height="72" class="inline-block" />
                     </div>
                     <h3 class="text-2xl font-serif text-plum-800 mb-4 text-center">Diverse Portfolio</h3>
                     <div class="space-y-3">
@@ -794,7 +826,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
                 </div>
                 <div class="text-center">
                     <div class="text-center">
-                        <img src="limelight-butterfly-certificate.jpg" class="inline-block" />
+                        <img src="images/limelight-butterfly-certificate.jpg" class="inline-block" />
                         
                     </div>
                 </div>
@@ -806,7 +838,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
            </div>             
         </div>
     </section>
-    <!-- Market Potential -->
+    <!-- Store Locations Carousel -->
     <section class="py-16 px-4 bg-white">
     <div class="container-fluid p-0">
         <div class="text-center mb-8">
@@ -818,19 +850,19 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="store-1.jpg" alt="Lake view" />
+                        <img src="images/store-1.jpg" alt="Lake view" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="store-2.jpg" alt="Desert sunset" />
+                        <img src="images/store-2.jpg" alt="Desert sunset" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="store-3.jpg" alt="Ocean waves" />
+                        <img src="images/store-3.jpg" alt="Ocean waves" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="store-4.jpg" alt="Mountain peak" />
+                        <img src="images/store-4.jpg" alt="Mountain peak" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="store-5.jpg" />
+                        <img src="images/store-5.jpg" />
                     
                 </div>
                 <!--
@@ -854,7 +886,7 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
     <!-- Zoom Overlay -->
     <div class="zoom-overlay" id="zoomOverlay">
         <span class="close-btn" id="closeBtn">&times;</span>
-        <img class="zoom-image" id="zoomImage" src="" alt="Zoomed image" />
+        <img class="zoom-image" id="zoomImage" src="images/" alt="Zoomed image" />
     </div>
 
     <!-- Market Potential -->
@@ -945,56 +977,6 @@ superior quality, exclusive designs and premium finish. A fully vertically integ
         </div>
     </section>
 
-    <!-- Lead Capture Form -->
-    <section id="contact-form" class="py-16 px-4 bg-gradient-to-br from-plum-600 to-plum-700 text-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-serif mb-6">Ready to Start Your Diamond Luxe Journey?</h2>
-            <p class="text-xl mb-8 opacity-90">Get your free franchise information package and discover the opportunity that's waiting for you.</p>
-            
-            <form id="franchiseForm" class="bg-white p-8 rounded-2xl text-gray-800 max-w-2xl mx-auto">
-                <div class="mb-6">
-                    <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Full Name *</label>
-                    <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
-                </div>
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Contact Number *</label>
-                        <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Email *</label>
-                        <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
-                    </div>
-                </div>
-                <div class="mb-6">
-                    <label class="block text-sm font-medium text-gray-700 mb-2 text-left">City / State *</label>
-                    <input type="text" required placeholder="e.g., Mumbai, Maharashtra" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
-                </div>
-                <div class="mb-6">
-                    <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Investment Range *</label>
-                    <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
-                        <option value="">Select Investment Range</option>
-                        <option value="25L">₹25L</option>
-                        <option value="50L-1Cr">₹50L–₹1 Cr</option>
-                        <option value="3Cr+">₹3 Cr+</option>
-                    </select>
-                </div>
-                <div class="mb-6">
-                    <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Preferred Model *</label>
-                    <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plum-500 focus:border-plum-500">
-                        <option value="">Select Preferred Model</option>
-                        <option value="FOCO">FOCO (₹2.9 Cr)</option>
-                        <option value="SIS Supreme">SIS Supreme (₹50L–₹1 Cr)</option>
-                        <option value="SIS Regular">SIS Regular (₹26L)</option>
-                    </select>
-                </div>
-                <button type="submit" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-4 rounded-lg text-lg transition-colors">
-                    Submit My Franchise Application
-                </button>
-                <p class="text-sm text-gray-600 mt-4">Your information is secure and will only be used to send you franchise details.</p>
-            </form>
-        </div>
-    </section>
 
     <!-- Trust & Credibility -->
     <section class="py-16 px-4 bg-white">
