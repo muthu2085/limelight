@@ -76,17 +76,32 @@
         }
         
         .luxury-gradient {
-            background: linear-gradient(90deg, #dfaeca 0%, #6b344f 100%);
+            background: url('images/web-banner.jpg') no-repeat center center;
+            background-size:cover;
             height:auto;
             overflow: hidden;
+            padding-top:0px;
+        }
+
+        @media all and (min-width:1400px) {
+            .luxury-gradient {
+                padding-top:100px;
+            }
         }
 
         @media all and (max-width:768px) {
             .luxury-gradient {
+                background: url('images/mob-banner.jpeg') no-repeat center 0 #45022e;
+                background-size: contain;
                 height:auto;
+                width: 100%;
+                padding-top:60px;
+                display:flex;
+                align-items: flex-end;
             }
+            .textcont { padding-top:70%!important}
+            .brdrwhite {border: 1px solid #a73880!important;}
         }
-        
         .diamond-bg {
             background-image: 
                 radial-gradient(circle at 20% 80%, rgba(68, 3, 48, 0.1) 0%, transparent 50%),
@@ -326,14 +341,14 @@
                 <div class="text-center">
                     <div class="relative inline-block text-center starbg">
                         <img src="images/star.png" class="absolute left-50 opacity-20" alt="Star Background" />
-                        <!-- Large Diamond Visual -->
+                        <!-- Large Diamond Visual
                        <img src="images/shilpa-shetty-new.png" class="inline-block bottom-0" alt="Diamond Luxe Franchise" />
-                        
+                    -->
                        
                     </div>
                 </div>
                 <!-- Left Column - Content -->
-                <div class="text-left  p-8 md:pt-16 lg:pt-24">
+                <div class="text-left  p-8 md:pt-16 lg:pt-24 textcont">
                     <h1 class="text-5xl md:text-6xl font-serif text-white mb-6 fade-in">
                         Own <b class="bg-plum-600 text-white px-4 rounded-lg">Limelight</b> in <br/>Your City
                     </h1>
@@ -373,7 +388,7 @@
                     </div>
               
                 </div>
-                <button type="submit" class="w-full bg-plum-600 hover:bg-plum-700 text-white py-4 rounded-lg text-lg transition-colors">
+                <button type="submit" class="brdrwhite w-full bg-plum-600 hover:bg-plum-700 text-white py-4 rounded-lg text-lg transition-colors">
                     Submit My Franchise Application
                 </button>
                 <p class="text-sm text-gray-100 mt-4">Your information is secure and will only be used to send you franchise details.</p>
